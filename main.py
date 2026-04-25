@@ -27,7 +27,7 @@ app = Client(
 )
 
 if __name__ == "__main__":
-    print("𝚂𝚝𝚛𝚊𝚗𝚐𝚎𝚛 𝚂𝚎𝚜𝚜𝚒𝚘𝚗 𝙶𝚎𝚗 𝚜𝚝𝚊𝚛𝚝𝚒𝚗𝚐...")
+    print("Kanha 𝚂𝚎𝚜𝚜𝚒𝚘𝚗 𝙶𝚎𝚗 𝚜𝚝𝚊𝚛𝚝𝚒𝚗𝚐...")
     try:
         app.start()
     except ApiIdInvalid:
