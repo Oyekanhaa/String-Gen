@@ -21,12 +21,12 @@ async def start(bot: Client, msg: Message):
 » ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ, ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ !**"""
 
     START_BTN = [
-        [InlineKeyboardButton("⌨️ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
+        [InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
         [
-            InlineKeyboardButton("💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton("💻 ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("sυᴘᴘσʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton("σᴡηєʀ", user_id=OWNER_ID),
         ],
-        [InlineKeyboardButton("📘 ɢᴜɪᴅᴇ", callback_data="guide")]
+        [InlineKeyboardButton(" ɢᴜɪᴅᴇ", callback_data="guide")]
     ]
 
     await bot.send_photo(
@@ -59,10 +59,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=GUIDE_TXT,
             reply_markup=InlineKeyboardMarkup([
                 [
-                    InlineKeyboardButton("💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton("🪧 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton("sυᴘᴘσʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+                    InlineKeyboardButton("υᴘᴅᴧᴛєs", url=f"https://t.me/{UPDATE_CHANNEL}"),
                 ],
-                [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="start_menu")]
+                [InlineKeyboardButton(" ʙᴀᴄᴋ", callback_data="start_menu")]
             ])
         )
 
@@ -80,12 +80,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 » ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ, ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ !**"""
 
         START_BTN = [
-            [InlineKeyboardButton("⌨️ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
+            [InlineKeyboardButton(" ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
             [
-                InlineKeyboardButton("💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-                InlineKeyboardButton("💻 ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+                InlineKeyboardButton("sυᴘᴘσʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+                InlineKeyboardButton("σᴡηєʀ", user_id=OWNER_ID),
             ],
-            [InlineKeyboardButton("📘 ɢᴜɪᴅᴇ", callback_data="guide")]
+            [InlineKeyboardButton("ɢᴜɪᴅᴇ", callback_data="guide")]
         ]
 
         try:
