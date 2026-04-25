@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
-from config import START_IMG, OWNER_ID, SUPPORT_CHAT, UPDATE_CHANNEL
+from config import START_IMG, OWNER_ID, OWNER_USERNAME, SUPPORT_CHAT, UPDATE_CHANNEL
 
 # Custom Filters
 def filter_cmd(cmd: str):
@@ -24,7 +24,7 @@ async def start(bot: Client, msg: Message):
         [InlineKeyboardButton("ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
         [
             InlineKeyboardButton("sυᴘᴘσʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton("σᴡηєʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("σᴡηєʀ", url=f"https://t.me/{OWNER_USERNAME}"),
         ],
         [InlineKeyboardButton(" ɢᴜɪᴅᴇ", callback_data="guide")]
     ]
@@ -83,7 +83,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton(" ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ", callback_data="generate")],
             [
                 InlineKeyboardButton("sυᴘᴘσʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-                InlineKeyboardButton("σᴡηєʀ", user_id=OWNER_ID),
+                InlineKeyboardButton("σᴡηєʀ", url=f"https://t.me/{OWNER_USERNAME}"),
             ],
             [InlineKeyboardButton("ɢᴜɪᴅᴇ", callback_data="guide")]
         ]
